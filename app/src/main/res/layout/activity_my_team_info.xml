@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/head" />
+
+    <ListView
+        android:id="@+id/lv_teamer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/line_color"
+        android:dividerHeight="5dp"
+        android:listSelector="@null"
+        android:scrollbars="none" />
+
+    <Button
+        android:id="@+id/quit_team"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_btn_theme"
+        android:text="退出队伍"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

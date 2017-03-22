@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/nav_close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="欢迎登录"
+            android:textColor="@color/auxiliary_color"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="温州大学竞赛管理系统"
+            android:textColor="@color/auxiliary_color"
+            android:textSize="25sp" />
+
+
+        <EditText
+            android:id="@+id/ed_study_id"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="30dp"
+            android:background="@null"
+            android:hint="学号/学工好"
+            android:maxLength="20"
+            android:numeric="integer"
+            android:text="13110043236"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_a"
+            android:textColorHint="@color/text_color_c" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color" />
+
+        <EditText
+            android:id="@+id/ed_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:hint="请输入你的密码"
+            android:text="123456"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="@color/text_color_a"
+            android:textColorHint="@color/text_color_c" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color" />
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/auxiliary_color"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="登 录"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_identity_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="身份选择:"
+            android:textColor="@color/auxiliary_color"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学生"
+            android:textColor="@color/auxiliary_color"
+
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="老师"
+            android:textColor="@color/auxiliary_color"
+            android:textSize="12sp" />
+    </RadioGroup>
+</LinearLayout>

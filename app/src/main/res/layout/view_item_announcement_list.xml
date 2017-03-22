@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rounded_rectangle_white"
+    android:paddingBottom="10dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp">
+
+    <com.wzdx.competionmanagesystem.Widget.CircleImageView
+        android:id="@+id/iv_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_head" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_head"
+        android:layout_toRightOf="@id/iv_head"
+        android:text="歼迟系统"
+        android:textColor="@color/text_color_a"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_publish_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_user_name"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_head"
+        android:drawableLeft="@drawable/icon_time"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="1小时前" />
+
+
+    <TextView
+        android:id="@+id/tv_info_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/iv_head"
+        android:layout_below="@id/iv_head"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="这是系统通告这是系统通告这是系统通告这是系统通告这是系统通告这是系统通告这是系统通告这是系统通告" />
+
+    <TextView
+        android:id="@+id/tv_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_down"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_info_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+
+        android:padding="5dp"
+        android:textColor="@color/auxiliary_color"
+        android:text="附件下载"/>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wzdx.competionmanagesystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".App.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activity.MainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.UserActivity" />
+        <activity android:name=".Activity.UserInfoActivity" />
+        <activity android:name=".Activity.EditUserInfoActivity" />
+        <activity android:name=".Activity.ChangePwdActivity" />
+        <activity android:name=".Activity.CompetitionActivity" />
+        <activity android:name=".Activity.Student.SingleApplyActivity" />
+        <activity android:name=".Activity.Student.GroupApplyActivity" />
+        <activity android:name=".Activity.Student.GroupListActivity" />
+        <activity android:name=".Activity.Teacher.SingleApplyTeacherActivity" />
+        <activity android:name=".Activity.Teacher.CreateNewTeamActivity" />
+        <activity android:name=".Activity.Teacher.GroupApplyTeacherActivity" />
+        <activity android:name=".Activity.Teacher.AddTeamerActivity" />
+        <activity android:name=".Activity.Teacher.GroupListActivityTeacher" />
+        <activity
+            android:name=".Activity.MyCompetitionActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".Activity.Student.DetailCompetitonActivity" />
+        <activity android:name=".Activity.Student.MyTeamInfoActivity" />
+        <activity android:name=".Activity.Teacher.DetailCompetitonTeacherActivity" />
+        <activity android:name=".Activity.ContestantsActivity"/>
+
+        <service android:name=".Service.DownloadService"/>
+
+    </application>
+
+</manifest>

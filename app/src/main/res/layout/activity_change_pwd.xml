@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/auxiliary_color">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/nav_b_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="修改登录密码"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <LinearLayout style="@style/ItemStyle">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="旧密码"
+            android:textColor="@color/text_color_a"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/ed_old_pwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入当前的密码"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:inputType="textPassword"
+            android:text="111111"
+            android:textColor="@color/text_color_a"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/background_color"/>
+
+    <LinearLayout style="@style/ItemStyle">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="新密码"
+            android:textColor="@color/text_color_a"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/ed_new_pwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入新密码"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:text="123456"
+            android:textColor="@color/text_color_a"
+            android:textSize="16sp"  />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/background_color"/>
+    <LinearLayout style="@style/ItemStyle">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="新密码"
+            android:textColor="@color/text_color_a"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/ed_sure_pwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="重新输入新密码"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:text="123456"
+            android:textColor="@color/text_color_a"
+            android:textSize="16sp"  />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_sure"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="确定修改"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@color/auxiliary_color"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+</LinearLayout>
