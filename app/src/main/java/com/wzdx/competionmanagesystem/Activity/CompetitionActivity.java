@@ -30,6 +30,7 @@ import com.wzdx.competionmanagesystem.Utils.MyUtilss;
 import com.wzdx.competionmanagesystem.Utils.TispToastFactory;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -91,13 +92,12 @@ public class CompetitionActivity extends Activity {
                         initDetailDialog(contentView, data);
 
 
-                        /**
                          //  报名时间与现有时间比较，判断是否可报名
-                         long curTime = new Date().getTime()/100;
+                         long curTime = new Date().getTime()/1000;
                          if (curTime > data.getF_time() || curTime < data.getS_time() || data.getState() != 2) {
                          mBt_apply.setEnabled(false);//不可报名时，按钮不可点击
                          }
-                         */
+
                         //报名按钮点击
                         mBt_apply.setOnClickListener(new View.OnClickListener() {
                             @Override

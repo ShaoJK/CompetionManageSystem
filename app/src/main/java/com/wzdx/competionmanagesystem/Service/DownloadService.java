@@ -53,7 +53,6 @@ public class DownloadService extends Service {
         threadMap.put(url, thread);
         thread.start();
 
-
         return super.onStartCommand(intent, flags, startId);
     }
 
@@ -106,6 +105,7 @@ public class DownloadService extends Service {
                 while ((length = is.read(b)) != -1) {
                     fos.write(b, 0, length);
                     curFileSize += length;
+                    //发送广播
                     sendBroadcastWithProgress( (curFileSize*1.0 / fileSize)*100);
                 }
             } catch (Exception e) {

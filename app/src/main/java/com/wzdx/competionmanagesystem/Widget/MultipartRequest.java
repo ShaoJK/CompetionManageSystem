@@ -63,9 +63,11 @@ public class MultipartRequest extends StringRequest {
         try {
             Map<String, String> responseHeaders = response.headers;
             String rawCookies = responseHeaders.get("Set-Cookie");
+            //判断response中是否包含了Cookie
             if (rawCookies != null && !rawCookies.isEmpty()) {
+                //保存Cookie到本地
                 SPUtil.putString(MyApplication.getInstance().
-                        getApplicationContext(), MyApplication.COOKIES, rawCookies);//保存Cookie
+                        getApplicationContext(), MyApplication.COOKIES, rawCookies);
             }
             System.out.println("cookies:"+rawCookies + "\n");
             String dataString = new String(response.data, "UTF-8");

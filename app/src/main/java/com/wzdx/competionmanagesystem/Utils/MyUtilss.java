@@ -56,7 +56,7 @@ public class MyUtilss {
      * 时间戳转化为具体时间
      */
     public static String getTimeFromTimestamp(long timestamp) {
-        Date date = new Date(timestamp);
+        Date date = new Date(timestamp*1000);
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
         String sd = sdf.format(date);
         return sd;

@@ -112,7 +112,7 @@ public class ContestantsActivity extends Activity implements UpdateProcessRecive
 
     private void downloadFile(String url) {
         mCurDownloadUrl = url;
-        //注册广播接受下载进度
+        //注册广播接受者，接受下载进度
         IntentFilter intentFilter = new IntentFilter("com.sjk.file.download");
         final UpdateProcessReciver reciver = new UpdateProcessReciver();
         reciver.setmDownloadListener(this);

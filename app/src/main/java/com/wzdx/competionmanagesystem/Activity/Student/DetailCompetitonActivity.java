@@ -105,6 +105,7 @@ public class DetailCompetitonActivity extends Activity implements View.OnClickLi
                 this.finish();
                 break;
             case R.id.tv_left://查看队伍
+                getTeamIDAndToTeamActivity();
                 break;
             case R.id.btn_cancle:
                 new AlertDialog.Builder(DetailCompetitonActivity.this).setMessage("该操作将会取消你对该比赛的报名\n" +

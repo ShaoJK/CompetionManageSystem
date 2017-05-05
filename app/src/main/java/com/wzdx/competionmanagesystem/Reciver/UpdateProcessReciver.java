@@ -16,7 +16,6 @@ public class UpdateProcessReciver extends BroadcastReceiver {
 
         String url = intent.getStringExtra("url");
         double process = intent.getDoubleExtra("process",0);
-        System.out.println("---------------------------文件下载中"+process+"%—----------------------------");
         if(mDownloadListener!=null){
             mDownloadListener.updateListener(url,process);
         }
