@@ -107,7 +107,9 @@ public class DownloadService extends Service {
                     curFileSize += length;
                     //发送广播
                     sendBroadcastWithProgress( (curFileSize*1.0 / fileSize)*100);
+                    System.out.println("curFileSize------>"+curFileSize);
                 }
+
             } catch (Exception e) {
                 e.printStackTrace();
             } finally {
@@ -120,6 +122,7 @@ public class DownloadService extends Service {
                     }
                     //下载完毕从map中删除
                     threadMap.remove(mUrl);
+                    System.out.println("下载完成");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

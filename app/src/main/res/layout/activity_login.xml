@@ -70,7 +70,7 @@
             android:layout_height="48dp"
             android:background="@null"
             android:hint="请输入你的密码"
-            android:text="123456"
+            android:text="111111"
             android:maxLength="20"
             android:paddingLeft="10dp"
             android:password="true"

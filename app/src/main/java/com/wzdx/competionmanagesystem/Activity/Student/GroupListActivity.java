@@ -83,7 +83,7 @@ public class GroupListActivity extends Activity {
             public void onClick(View v) {
                 String name = et_select.getText();
                 if (name.isEmpty()) {
-                    TispToastFactory.showTip("请输入队长姓名");
+                    selectTeamByName("");
                 } else {
                     selectTeamByName(name);
                 }

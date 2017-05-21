@@ -203,7 +203,7 @@ public class CreateNewTeamActivity extends Activity implements View.OnClickListe
             btn_add_teamer.setVisibility(View.VISIBLE);
         } else {//添加队员
             teamerView = View.inflate(this, R.layout.view_item_teamer, ll_teamer);
-            if (mCompetitionDetail.getGroup_num() <= ll_teamer.getChildCount() + 1) {
+            if (mCompetitionDetail.getGroup_num() >= ll_teamer.getChildCount() + 1) {
                 btn_add_teamer.setVisibility(View.GONE);
             }
         }
